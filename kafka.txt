@@ -1,0 +1,42 @@
+
+连接服务器
+ssh root@120.77.39.56
+
+
+启动zookeeper ，启动kafka都是在 F:\javaKafka\kafka_2.12-2.3.0\bin\windows
+
+docker的命令
+docker ps   查看运行的进程
+docker images 查看所有安装的程序
+docker search mysql 查看mysql的安装包
+docker pull mysql 将mysql程序拉下来后进行安装
+
+移除已有的程序 
+先查看当前docker中正在运行的程序：
+docker ps -a
+
+输出结果：
+
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS                      PORTS               NAMES
+30ddcd34a671        ubuntu:16.04        "/bin/echo 'hello wo…"   17 seconds ago      Exited (0) 13 sec
+
+docker rm 30ddcd34a671
+停服务  docker stop e5c3ef2e501a
+
+启动zookeeper  
+
+[root@admin //]# docker run -d -p 2181:2181 zookeeper
+8378d419c20dee47f6a9f588b26f531cf0d3a0dcbc031c4884fde7371ac89f2c
+
+
+docker run --name kafka -e HOST_IP=localhost -e KAFKA_ADVERTISED_PORT=9092 -e KAFKA_BROKER_ID=1 -e ZK=zk -p 9092 --link zookeeper:zk -t wurstmeister/kafka
+
+					
+redis 
+启动 命令行 redis-server.exe redis.windows.conf 启动服务器端以后 redis-cli.exe 客户端  auth 密码 登陆后
+keys * 查看所有的key  get key ,获取value   config get requirepass 查看密码
+
+
+
+
+

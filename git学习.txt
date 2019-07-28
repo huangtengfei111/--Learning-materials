@@ -1,0 +1,59 @@
+
+本地的git的配置
+git config --global user.name '用户名'
+git config --global user.email '邮箱'
+
+查看git的配置
+git config --list --global 
+
+
+git账号的使用
+
+
+查看本地有没有公私钥
+ ~/.ssh/id_rsa.pub
+ 
+ 生成本地的公私钥 
+ ssh-keygen -t rsa -b 4096 -C "1134916616@qq.com" 一路回车
+ 
+ 将其添加到git账号上
+ 账号的setting 
+ SSH and GPG keys  添加上公钥内容
+ 新建一个仓库
+ Repositories 
+ 
+ git bash后
+ 进入到项目文件夹所在的位置下
+ 
+ 
+将本地文件push到远端，报错，本地没有仓库
+ git remote github https://github.com/huangtengfei111/git-test.git
+fatal: not a git repository (or any of the parent directories): .git
+
+ git init后再次执行
+ 
+ 查看分支 gitk --all
+ 
+ 查看本地所有分支 git branch -v
+ 
+ git remote add origin https://github.com/huangtengfei111/git-new.git
+ git push -u origin master
+
+ git branch 查看当前属于哪个分支
+
+git branch +名称 创建分支
+
+git checkout +名称 切换分支
+
+git checkout -b +名称 创建并切换分支
+
+合并两个分支 将test02分支的代码合并到master分支上
+ git merge test02
+ git push
+
+ 后面的是git提交的历史版本号，上git上面找到复制下来就行
+ 执行上面操作之后我们本地的代码就会回到你需要回到的某个版本的代码
+git reset --hard 139dcfaa558e3276b30b6b2e5cbbb9c00bbdca96 
+
+
+ 
