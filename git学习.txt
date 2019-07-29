@@ -1,64 +1,64 @@
 
-±¾µØµÄgitµÄÅäÖÃ
-git config --global user.name 'ÓÃ»§Ãû'
-git config --global user.email 'ÓÊÏä'
+æœ¬åœ°çš„gitçš„é…ç½®
+git config --global user.name 'ç”¨æˆ·å'
+git config --global user.email 'é‚®ç®±'
 
-²é¿´gitµÄÅäÖÃ
+æŸ¥çœ‹gitçš„é…ç½®
 git config --list --global 
 
 
-gitÕËºÅµÄÊ¹ÓÃ
+gitè´¦å·çš„ä½¿ç”¨
 
 
-²é¿´±¾µØÓĞÃ»ÓĞ¹«Ë½Ô¿
+æŸ¥çœ‹æœ¬åœ°æœ‰æ²¡æœ‰å…¬ç§é’¥
  ~/.ssh/id_rsa.pub
  
- Éú³É±¾µØµÄ¹«Ë½Ô¿ 
- ssh-keygen -t rsa -b 4096 -C "1134916616@qq.com" Ò»Â·»Ø³µ
+ ç”Ÿæˆæœ¬åœ°çš„å…¬ç§é’¥ 
+ ssh-keygen -t rsa -b 4096 -C "1134916616@qq.com" ä¸€è·¯å›è½¦
  
- ½«ÆäÌí¼Óµ½gitÕËºÅÉÏ
- ÕËºÅµÄsetting 
- SSH and GPG keys  Ìí¼ÓÉÏ¹«Ô¿ÄÚÈİ
- ĞÂ½¨Ò»¸ö²Ö¿â
+ å°†å…¶æ·»åŠ åˆ°gitè´¦å·ä¸Š
+ è´¦å·çš„setting 
+ SSH and GPG keys  æ·»åŠ ä¸Šå…¬é’¥å†…å®¹
+ æ–°å»ºä¸€ä¸ªä»“åº“
  Repositories 
  
- git bashºó
- ½øÈëµ½ÏîÄ¿ÎÄ¼ş¼ĞËùÔÚµÄÎ»ÖÃÏÂ
+ git bashå
+ è¿›å…¥åˆ°é¡¹ç›®æ–‡ä»¶å¤¹æ‰€åœ¨çš„ä½ç½®ä¸‹
  
  
-½«±¾µØÎÄ¼şpushµ½Ô¶¶Ë£¬±¨´í£¬±¾µØÃ»ÓĞ²Ö¿â
+å°†æœ¬åœ°æ–‡ä»¶pushåˆ°è¿œç«¯ï¼ŒæŠ¥é”™ï¼Œæœ¬åœ°æ²¡æœ‰ä»“åº“
  git remote github https://github.com/huangtengfei111/git-test.git
 fatal: not a git repository (or any of the parent directories): .git
 
- git initºóÔÙ´ÎÖ´ĞĞ
+ git initåå†æ¬¡æ‰§è¡Œ
  
- ²é¿´·ÖÖ§ gitk --all
+ æŸ¥çœ‹åˆ†æ”¯ gitk --all
  
- ²é¿´±¾µØËùÓĞ·ÖÖ§ git branch -v
+ æŸ¥çœ‹æœ¬åœ°æ‰€æœ‰åˆ†æ”¯ git branch -v
  
  git remote add origin https://github.com/huangtengfei111/git-new.git
  git push -u origin master
 
- git branch ²é¿´µ±Ç°ÊôÓÚÄÄ¸ö·ÖÖ§
+ git branch æŸ¥çœ‹å½“å‰å±äºå“ªä¸ªåˆ†æ”¯
 
-git branch +Ãû³Æ ´´½¨·ÖÖ§
+git branch +åç§° åˆ›å»ºåˆ†æ”¯
 
-git checkout +Ãû³Æ ÇĞ»»·ÖÖ§
+git checkout +åç§° åˆ‡æ¢åˆ†æ”¯
 
-git checkout -b +Ãû³Æ ´´½¨²¢ÇĞ»»·ÖÖ§
+git checkout -b +åç§° åˆ›å»ºå¹¶åˆ‡æ¢åˆ†æ”¯
 
-ºÏ²¢Á½¸ö·ÖÖ§ ½«test02·ÖÖ§µÄ´úÂëºÏ²¢µ½master·ÖÖ§ÉÏ
+åˆå¹¶ä¸¤ä¸ªåˆ†æ”¯ å°†test02åˆ†æ”¯çš„ä»£ç åˆå¹¶åˆ°masteråˆ†æ”¯ä¸Š
  git merge test02
  git push
 
- ºóÃæµÄÊÇgitÌá½»µÄÀúÊ·°æ±¾ºÅ£¬ÉÏgitÉÏÃæÕÒµ½¸´ÖÆÏÂÀ´¾ÍĞĞ
- Ö´ĞĞÉÏÃæ²Ù×÷Ö®ºóÎÒÃÇ±¾µØµÄ´úÂë¾Í»á»Øµ½ÄãĞèÒª»Øµ½µÄÄ³¸ö°æ±¾µÄ´úÂë
+ åé¢çš„æ˜¯gitæäº¤çš„å†å²ç‰ˆæœ¬å·ï¼Œä¸Šgitä¸Šé¢æ‰¾åˆ°å¤åˆ¶ä¸‹æ¥å°±è¡Œ
+ æ‰§è¡Œä¸Šé¢æ“ä½œä¹‹åæˆ‘ä»¬æœ¬åœ°çš„ä»£ç å°±ä¼šå›åˆ°ä½ éœ€è¦å›åˆ°çš„æŸä¸ªç‰ˆæœ¬çš„ä»£ç 
 git reset --hard 139dcfaa558e3276b30b6b2e5cbbb9c00bbdca96 
 
 
-Ò»¸öĞÂµÄÏîÄ¿ÏògitÌá½»
- ÔÚgitÉÏ´´½¨Ò»¸ö²Ö¿â£¬ÔÚ±¾µØgit bash ½øÈëµ½¸ÃÎÄ¼şÂ·¾¶ÏÂ£¬
- git initºóÉú³ÉÒ»¸ö±¾µØ²Ö¿â£¬
+ä¸€ä¸ªæ–°çš„é¡¹ç›®å‘gitæäº¤
+ åœ¨gitä¸Šåˆ›å»ºä¸€ä¸ªä»“åº“ï¼Œåœ¨æœ¬åœ°git bash è¿›å…¥åˆ°è¯¥æ–‡ä»¶è·¯å¾„ä¸‹ï¼Œ
+ git initåç”Ÿæˆä¸€ä¸ªæœ¬åœ°ä»“åº“ï¼Œ
  git remote add origin https://github.com/huangtengfei111/redis-springcloud.git
  git push -u origin master
  
@@ -67,7 +67,7 @@ error: src refspec master does not match any.
 error: failed to push some refs to 'https://github.com/huangtengfei111/redis-springcloud.git'
 
  git add .
- git commit -m 'µÚÒ»´Îcommit'
+ git commit -m 'ç¬¬ä¸€æ¬¡commit'
  git push -u origin master
 
 
