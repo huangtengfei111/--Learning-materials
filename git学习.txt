@@ -56,4 +56,19 @@ git checkout -b +名称 创建并切换分支
 git reset --hard 139dcfaa558e3276b30b6b2e5cbbb9c00bbdca96 
 
 
+一个新的项目向git提交
+ 在git上创建一个仓库，在本地git bash 进入到该文件路径下，
+ git init后生成一个本地仓库，
+ git remote add origin https://github.com/huangtengfei111/redis-springcloud.git
+ git push -u origin master
+ 
+ $ git push -u origin master
+error: src refspec master does not match any.
+error: failed to push some refs to 'https://github.com/huangtengfei111/redis-springcloud.git'
+
+ git add .
+ git commit -m '第一次commit'
+ git push -u origin master
+
+
  
