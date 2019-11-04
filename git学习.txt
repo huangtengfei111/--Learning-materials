@@ -70,5 +70,6 @@ error: failed to push some refs to 'https://github.com/huangtengfei111/redis-spr
  git commit -m '第一次commit'
  git push -u origin master
 
-
- 
+与远程仓库建立连接 
+ git remote add origin git@github.com:huangtengfei111/APS.git
+ 拉取项目 git pull 
